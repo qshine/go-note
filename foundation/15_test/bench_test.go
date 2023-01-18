@@ -3,7 +3,7 @@ package split
 import "testing"
 
 // 性能测试
-// 执行必须带 -bench 参数, 如: go test -bench=Split
+// 执行必须带 -bench 参数, 如: go unittest -bench=Split
 
 func BenchmarkSplit(b *testing.B) {
 	for i := 0; i < b.N; i++ {

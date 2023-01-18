@@ -14,7 +14,7 @@ func test0() {
 
 	// struct -> json
 	t := T{
-		Name: "test",
+		Name: "unittest",
 		Age:  20,
 	}
 
@@ -23,7 +23,7 @@ func test0() {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println(string(data)) // {"Name":"test","Age":20}
+	fmt.Println(string(data)) // {"Name":"unittest","Age":20}
 
 	// json -> struct
 	var t0 T
@@ -32,7 +32,7 @@ func test0() {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println(t0) // {test 20}
+	fmt.Println(t0) // {unittest 20}
 }
 
 // map <-> json

@@ -11,7 +11,7 @@ import (
 
 // 一次全部读取
 func test0() {
-	file, err := os.Open("./test.txt")
+	file, err := os.Open("./unittest.txt")
 	if err != nil {
 		fmt.Println(err)
 		fmt.Println("open error")
@@ -32,7 +32,7 @@ func test0() {
 
 // 循环读取
 func test1() {
-	file, err := os.Open("./test.txt")
+	file, err := os.Open("./unittest.txt")
 	if err != nil {
 		fmt.Println("open error")
 		return
@@ -59,7 +59,7 @@ func test1() {
 
 // 使用ioutil包读取
 func test2() {
-	content, err := ioutil.ReadFile("./test.txt")
+	content, err := ioutil.ReadFile("./unittest.txt")
 	if err != nil {
 		fmt.Println("open error")
 		return

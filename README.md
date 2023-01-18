@@ -1,2 +1,4 @@
 # go-note
-learning go
+
+[基础](foundation)
+[实践](practice)

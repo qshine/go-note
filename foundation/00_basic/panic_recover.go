@@ -30,7 +30,7 @@ func Call() {
 			fmt.Println("333")
 		}
 	}()
-	panic("error test")
+	panic("error unittest")
 }
 
 func test_2() {
